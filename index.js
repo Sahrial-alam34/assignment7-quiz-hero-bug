@@ -77,7 +77,7 @@ const displayQuiz = (data) => {
 // EventListener for quiz submit button
 
 document.querySelector("#submit").addEventListener('click', () => {
-   console.log('hi')
+   
   if (answers.length < 6) {
     return;
   }
@@ -111,10 +111,17 @@ document.querySelector("#submit").addEventListener('click', () => {
   }
 
   // data setting on local storage and getting data from local storage
-  let storage = JSON.parse(localStorage.getItem("results"));
+  // let results = {};
+  // let storage = localStorage.getItem('results');
+  // console.log('115',storage)
+  // if(storage){
+  //   storage = JSON.parse(storage);
+  // }
+   let storage = JSON.parse(localStorage.getItem('results'));
+  //console.log(storage)
   if (storage) {
     localStorage.setItem(
-      "results",
+      'results',
       JSON.stringify([
         ...storage,
         {
@@ -125,9 +132,11 @@ document.querySelector("#submit").addEventListener('click', () => {
       ])
     );
   } else {
+    console.log('hi local')
     localStorage.setItem(
-      "results",
+      'results',
       JSON.stringify([
+        
         {
           marks: totalMark,
           examTime: timeTaken.innerText,
@@ -136,7 +145,7 @@ document.querySelector("#submit").addEventListener('click', () => {
       ])
     );
   }
-
+  storage = JSON.parse(localStorage.getItem('results'));
   // Right side bar/ answer section
   let x = setTimeout(() => {
     showAnswers(answers);
