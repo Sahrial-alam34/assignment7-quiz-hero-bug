@@ -1,3 +1,8 @@
+//nav button
+document.getElementById('nav-button').addEventListener('click', function () {
+  window.location.href = 'question.html'
+})
+
 // global variable declaration
 let count = 0;
 let timer;
@@ -110,13 +115,7 @@ document.querySelector("#submit").addEventListener('click', () => {
     grade.color = "text-red-600";
   }
 
-  // data setting on local storage and getting data from local storage
-  // let results = {};
-  // let storage = localStorage.getItem('results');
-  // console.log('115',storage)
-  // if(storage){
-  //   storage = JSON.parse(storage);
-  // }
+
    let storage = JSON.parse(localStorage.getItem('results'));
   //console.log(storage)
   if (storage) {
