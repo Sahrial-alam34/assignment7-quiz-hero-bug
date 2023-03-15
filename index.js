@@ -58,7 +58,7 @@ const loadQuiz = async () => {
 
 // Displaying quiz on quiz page
 const displayQuiz = (data) => {
-  console.log(data);
+  //console.log(data);
   if (!data) {
     quizContainer.innerHTML = "";
     return;
@@ -131,7 +131,7 @@ document.querySelector("#submit").addEventListener('click', () => {
       ])
     );
   } else {
-    console.log('hi local')
+    
     localStorage.setItem(
       'results',
       JSON.stringify([

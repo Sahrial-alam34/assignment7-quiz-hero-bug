@@ -13,7 +13,7 @@
                 class="font-semibold text-violet-600">Answer the all question</span>!!!</h1>
     </header>
     <main>
-        <div class=" flex flex-col md:flex-row lg:flex-row mt-5 ml-28">
+        <div class=" flex flex-col md:flex-row lg:flex-row mt-5 lg:ml-28">
             <div class="w-full md:w-[85%] lg:w-[85%] gap-5">
                
                 <div class="card card-compact w-full bg-gray-300 mx-auto ">
@@ -32,7 +32,10 @@
                     <h1> Answer: The event loop is a process which not pushing callbacks from the Task Queue to the Call Stack,  until the Call Stack to be clear. When stack is clear,the event loop triggers and checks the Task Queue for available callbacks.And When stack is full wait in the callback queue until clear stack. This things repeat.   </h1>
                   </div>
                   <div class="ml-5 mt-5">
-                    <h1> 4. Works of quiztimes() and choosequiz()</h1>
+                    <h1> 4. Works of quizTimer() and chooseQuiz()</h1>
+                    <h1>Answer:  quizTimer(): When this function get truthy result, the interval time will be clear or decline then return. But when get falsy value, interval timer set which has 1000 millisecond and execute second, minutes elements and also increase count value. When count value greater than 60 and also event number, remove text-red-300 class list and add text-red-700 class list. Other wise,remove text-red-700 class list and add text-red-300 class list. <span><br><br></span> 
+                    chooseQuiz(): This function is used for get answer and answer index. If once clicked in one index then update answer and copy all properties of quizData array. First of all, get index number and answer. After that, check current answer.id is available in quizData index.id using find function. If it is falsy value then execute else statement and push answer into quizData. Other wise, execute if statement, check exist.id and quiz.id is equal or not? if true then, remove specific element in serial index, new element inserted in it's place. and copy all properties of quizData at the specified index and answer also added.     
+                    </h1>
                   </div>
                 </div>
               </div>
