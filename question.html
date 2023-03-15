@@ -13,35 +13,26 @@
                 class="font-semibold text-violet-600">Answer the all question</span>!!!</h1>
     </header>
     <main>
-        <div class=" flex flex-col md:flex-row lg:flex-row mt-5">
-            <div class="w-full md:w-[85%] lg:w-[85%] grid md:grid-cols-2 lg:grid-cols-2 gap-5">
-                <div>
-                    <figure><img class="w-fit mx-5 my-5 shadow-lg" src="/img/question.png" alt="Question"/></figure>
-                </div>
+        <div class=" flex flex-col md:flex-row lg:flex-row mt-5 ml-28">
+            <div class="w-full md:w-[85%] lg:w-[85%] gap-5">
                
                 <div class="card card-compact w-full bg-gray-300 mx-auto ">
                   <h2 class="card-title text-center underline">Question And Answer!!</h2>
                   <div class="ml-5 mt-5">
-                    <h1> 1. What is DOM ? What is the purpose of DOM ? </h1>
-                    <h1> Answer: The HTML DOM is an object model that used in HTML section as programming interface. It looks like a logical tree. DOM represents a documents as nodes and object. When a web browser parses an HTML document,it builds a DOM tree and then uses it to display the document. </h1>
+                    <h1> 1. Difference between Map, Filter ForEach, Find ? </h1>
+                    <h1> Answer: forEach() is execute same code on every element in an array but does not return. map() is execute like as forEach() but it return array. filter() is used for check every element according to condition and returns a new array which has all element those satisfy with condition. find() is worked as filter but in returns gave first value of this array which satisfy the conditions </h1>
                   </div>
                   <div class="ml-5 mt-5">
-                    <h1> 2. How will you select HTML elements using DOM? Name the DOM methods ? </h1>
-                    <h1> Answer: To select HTML elements within a document using JavaScript is used in DOM selectors. There five ways for select:
-                        a. getElementsByTagName().
-                        b. getElementsByClassName().
-                        c. getElementById().
-                        d. querySelector().
-                        e. querySelectorAll().
+                    <h1> 2. Difference between Local storage,  Session storage, Cookies ?</h1>
+                    <h1>Answer: Local storage: The data which stored in local storage is not deleted when the browser is closed. So really use things for access data later. Session storage: The data which stored only for session and deleted data when browser is closed. It helps for improve web application performance. Cookies: the data which saved will be expire at a certain time. The data will sent a request client to server.
                      </h1>
                   </div>
                   <div class="ml-5 mt-5">
-                    <h1> 3. What is  event bubble ? </h1>
-                    <h1> Answer: When a an event is in an element inside another element. Both elements bounded for that event. It is a process which starts with the element that triggered the event and then bubbles up to the containing elements in the down or hierarchy. </h1>
+                    <h1> 3. What is  event loop and how it works ? </h1>
+                    <h1> Answer: The event loop is a process which not pushing callbacks from the Task Queue to the Call Stack,  until the Call Stack to be clear. When stack is clear,the event loop triggers and checks the Task Queue for available callbacks.And When stack is full wait in the callback queue until clear stack. This things repeat.   </h1>
                   </div>
                   <div class="ml-5 mt-5">
-                    <h1> 4. What is a callback function and why will you use it? </h1>
-                    <h1> Answer: A function which used for passed as an arguments to another function. It runs after another function has finished. It passed another function parameters as value not function type. When we call a function, we can control this function. A callback's primary purpose is to execute code in response to an event.</h1>
+                    <h1> 4. Works of quiztimes() and choosequiz()</h1>
                   </div>
                 </div>
               </div>
