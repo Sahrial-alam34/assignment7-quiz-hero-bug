@@ -48,24 +48,24 @@ const displayQuizOptions = (quiz, i) => {
 
 // select or choose quiz
 const chooseQuiz = (index, givenAns) => {
-  console.log('ans', index, givenAns)
+  //console.log('ans', index, givenAns)
   const isExist = answers.find((ans) => ans.id === quizData[index].id);
-  console.log('is exist', isExist)
+  //console.log('is exist', isExist)
   if (isExist) {
     let serial = 0;
     for (let quiz of answers) {
-      console.log('exist id: ',isExist.id, 'quiz id',quiz.id)
+      //console.log('exist id: ',isExist.id, 'quiz id',quiz.id)
       if (isExist.id === quiz.id) {
         answers.splice(serial, 1, { ...quizData[index], givenAns });
         break;
       }
-      console.log('serial num',serial);
+      
       serial++;
-      console.log('serial num',serial);
+      //console.log('serial num',serial);
     }
   } else {
     answers.push({ ...quizData[index], givenAns });
-    console.log('welcome to new world')
+    //console.log('welcome to new world')
   }
   displayAnswers(answers);
 };
